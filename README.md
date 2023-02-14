@@ -72,4 +72,4 @@ Now you the view the project by going to <http://localhost:3000/>
 
 ## Contribute to this project
 
-Check out ``CONTRIBUTING.md`` file to know more about contributing.
+Check out [CONTRIBUTING.md](./CONTRIBUTING.md) file to know more about contributing.
