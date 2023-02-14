@@ -2,6 +2,15 @@
 
 This is a realtime auction application, using Node.js as backend, React.js as frontend and MongoDb as Database.
 
+**Home Page**
+![Home Page](./screenshots/main_page.png)
+
+**Admin Page**
+![Main page](./screenshots/admin_page.png)
+
+**Realtime Bidding**
+![Realtime biddng](./screenshots/realtime_bidding.png)
+
 ## Installation
 
 use the following steps to run the projects to run this project in your local system.
