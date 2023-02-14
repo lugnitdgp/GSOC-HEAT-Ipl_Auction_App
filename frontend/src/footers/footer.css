@@ -1,0 +1,9 @@
+.footer{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+
+}

@@ -1,0 +1,38 @@
+version: "3.8"
+services:
+  api:
+    build: ./server
+    container_name: server
+    ports:
+      - '5000:5000'
+    networks:
+      - ipl-app
+    env_file:
+      - .env
+    depends_on:
+      - mongo
+  client:
+    build: ./frontend
+    container_name: frontend_c
+    ports:
+      - '3000:3000'
+    networks:
+      - ipl-app
+    stdin_open: true
+    links:
+      - 'api'
+  mongo:
+    image: mongo:4.4-bionic
+    ports:
+      - '27017:27017'
+    networks:
+      - ipl-app
+    volumes:
+      - data:/data/db
+    restart: always
+networks:
+  ipl-app:
+    driver: bridge
+volumes:
+  data:
+    driver: local
